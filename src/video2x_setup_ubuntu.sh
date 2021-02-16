@@ -59,7 +59,7 @@ mkdir -v -p $INSTALLATION_PATH/video2x/src/dependencies
 # apt-fast install -y --no-install-recommends cargo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y
 source $HOME/.cargo/env
-cargo install gifski
+cargo install gifski --verbose
 
 # install waifu2x-caffe
 apt-fast install -y --no-install-recommends autoconf build-essential cmake gcc-8 libatlas-base-dev libboost-atomic-dev libboost-chrono-dev libboost-date-time-dev libboost-filesystem-dev libboost-iostreams-dev libboost-python-dev libboost-system-dev libboost-thread-dev libcudnn7 libcudnn7-dev libgflags-dev libgoogle-glog-dev libhdf5-dev libleveldb-dev liblmdb-dev libopencv-dev libprotobuf-dev libsnappy-dev protobuf-compiler python-dev python-numpy texinfo yasm zlib1g-dev
