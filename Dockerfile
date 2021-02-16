@@ -21,7 +21,7 @@ LABEL maintainer="K4YT3X <k4yt3x@k4yt3x.com>"
 # run installation
 RUN apt-get update \
     && apt-get install -y git-core \
-    && git clone --recurse-submodules --progress https://github.com/k4yt3x/video2x.git /tmp/video2x/video2x \
+    && git clone --recurse-submodules --progress https://github.com/solonovamax/video2x.git /tmp/video2x/video2x \
     && bash -e /tmp/video2x/video2x/src/video2x_setup_ubuntu.sh /
 
 WORKDIR /host
